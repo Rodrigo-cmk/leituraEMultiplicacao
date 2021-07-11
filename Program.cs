@@ -9,65 +9,26 @@ namespace leituraEMultiplicacao
             try
             {
                 int[] n = new int[10];
+                int ind = 0; // Ind == Índice
 
                 inicio();
 
-                // for (int i = 1; i == 10; i++)
-                // {
-                //     Console.Write($"- Digite o {i}º valor.:  ");
-                //     n[0] = Convert.ToInt32(Console.ReadLine());
-                //     Console.WriteLine("|");
-                // }
+                for (int i = 1; i < 11; i++)
+                {
+                    Console.Write($"- Digite o {i}º valor: ");
+                    n[ind] = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine();
 
-
-                Console.Write("- Digite o primeiro valor.:  ");
-                n[0] = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("|");
-
-                Console.Write("- Digite o segundo valor...: ");
-                n[1] = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("|");
-
-                Console.Write("- Digite o terceiro valor..: ");
-                n[2] = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("|");
-
-                Console.Write("- Digite o quarto valor....: ");
-                n[3] = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("|");
-
-                Console.Write("- Digite o quinto valor....: ");
-                n[4] = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("|");
-
-                Console.Write("- Digite o sexto valor.....: ");
-                n[5] = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("|");
-
-                Console.Write("- Digite o sétimo valor....: ");
-                n[6] = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("|");
-
-                Console.Write("- Digite o oitavo valor....: ");
-                n[7] = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("|");
-
-                Console.Write("- Digite o nono valor......: ");
-                n[8] = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("|");
-
-                Console.Write("- Digite o décimo valor....: ");
-                n[9] = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine();
+                    ind++;
+                }
 
                 int[] b = new int[]{n[0] * 3, n[1] * 2, n[2] * 3, n[3] * 2,
                                     n[4] * 3, n[5] * 2, n[6] * 3, n[7] * 2,
                                     n[8] * 3, n[9] * 2
                                     };
 
-                Console.WriteLine("* Lembrando que a multiplicação acontece por posição.");
-                Console.WriteLine();
-
+                Console.WriteLine("* Lembrando que a multiplicação acontece por posição. \n");
+                
                 int contador = 1;
                 foreach (int valorImpresso in b)
                 {
